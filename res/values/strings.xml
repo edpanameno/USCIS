@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_title">USCIS Civics Flash Cards</string>
+    <string name="app_name">Civics Test</string>
+    <string name="home_browse_questions">All Civics Questions</string>
+    <string name="home_browse_random_questions">Browse Random Questions</string>
+    <string name="home_flashcards">Flash Cards</string>
+    <string name="flag_question">Flag Question</string>
+    <string name="home_browse_ten_random_questions">10 Random Questions</string>
+    <string name="browse_help_prompt">
+        To view an answer, tap on the question. To hide the answer, tap the question once more.
+        To Flag a question, tap and hold a question and select yes to flag the question. Click the menu 
+        button on your phone to view the options menu. 
+    </string>
+    <string name="flash_card_help_prompt">
+        To view an answer, tap on the question. Use the navigation arrows to go to the
+        next (or previous) question. Click your menu button to view the options menu. 
+    </string>
+</resources>

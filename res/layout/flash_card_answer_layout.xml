@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:paddingTop="20dip"
+  android:paddingBottom="5dip"
+  android:paddingLeft="20dip"
+  android:paddingRight="10dip"
+  android:background="#580000">
+ 
+  <ScrollView
+    android:id="@+id/scrollView"
+    android:layout_width="fill_parent" 
+    android:layout_height="220dip">
+    <TextView 
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:textColor="#b3b5b7" 
+        android:textSize="20dip"
+        android:id="@+id/answer" />
+  </ScrollView> 
+    
+  <LinearLayout 
+    android:id="@+id/linearLayout1" 
+    android:orientation="horizontal" 
+    android:gravity="center_horizontal" 
+    android:layout_height="30dip" 
+    android:layout_width="fill_parent">
+      <ImageButton 
+        android:id="@+id/btnPrevious" 
+        android:layout_height="fill_parent" 
+        android:layout_width="50dip" 
+        android:background="@android:color/transparent" 
+        android:src="@drawable/icon_arrow_left"/>
+      <ImageButton 
+        android:id="@+id/btnNext" 
+        android:layout_height="fill_parent" 
+        android:layout_width="50dip" 
+        android:background="@android:color/transparent" 
+        android:src="@drawable/icon_arrow_right"/>
+  </LinearLayout>
+</LinearLayout>

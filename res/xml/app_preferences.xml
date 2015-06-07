@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="USCIS Application Preferences" >
+    <PreferenceCategory android:title="Text to Speech">
+        <CheckBoxPreference 
+            android:key="text_to_speech" 
+            android:title="Text to Speech"
+            android:defaultValue="false"
+            android:summary="To enable Text to Speech, click to check the box. To disable Text to Speech, uncheck the box. NOTE: Text to speech only available for Flash Card Mode." />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="User Data">
+        <Preference 
+            android:key="remove_flagged_questions"
+            android:title="Remove Flagged Questions"
+            android:summary="To remove all cleared flags, click this option. Note: this step cannot be undone, so use this with care." />
+    </PreferenceCategory> 
+</PreferenceScreen>

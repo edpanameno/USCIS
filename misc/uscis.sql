@@ -1,0 +1,134 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE "categories" (
+    "_id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+    "category_name" TEXT NOT NULL
+);
+INSERT INTO "categories" VALUES(1,'American Government');
+INSERT INTO "categories" VALUES(2,'American History');
+INSERT INTO "categories" VALUES(3,'Integrated Civics');
+CREATE TABLE "sections" (
+    "_id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+    "category_id" INTEGER NOT NULL,
+    "section_name" TEXT NOT NULL
+);
+INSERT INTO "sections" VALUES(1,1,'Principles of American Democracy');
+INSERT INTO "sections" VALUES(2,1,'System of Government');
+INSERT INTO "sections" VALUES(3,1,'Rights and Responsibilites');
+INSERT INTO "sections" VALUES(4,2,'Colonial Period and Independence');
+INSERT INTO "sections" VALUES(5,2,'1800s');
+INSERT INTO "sections" VALUES(6,2,'Recent American History and Other Important Historical Facts');
+INSERT INTO "sections" VALUES(7,3,'Geography');
+INSERT INTO "sections" VALUES(8,3,'Symbols');
+INSERT INTO "sections" VALUES(9,3,'Holidays');
+CREATE TABLE "questions" (
+    "_id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+    "section_id" INTEGER NOT NULL,
+    "question" TEXT NOT NULL,
+    "answer" TEXT NOT NULL
+);
+INSERT INTO "questions" VALUES(1,1,'What is the supreme law of the land?','the Constitution');
+INSERT INTO "questions" VALUES(2,1,'What does the Constitution do?','<ul><li>sets up the government</li><li>defines the government</li><li>protects the basic rights of Americans</li></ul>');
+INSERT INTO "questions" VALUES(3,1,'The idea of self-government is in the first three words of the Constitution. What are these words?','We the People');
+INSERT INTO "questions" VALUES(4,1,'What is an amendment?','<ul><li>a change (to the Constitution)</li><li>an addition (to the Constitution)</li></ul>');
+INSERT INTO "questions" VALUES(5,1,'What do we call the first ten amendments to the Constitution?','the Bill of Rights');
+INSERT INTO "questions" VALUES(6,1,'What is <u>one</u> right or freedom from the First Amendment?*','<ul><li>speech</li><li>religion</li><li>assembly</li><li>press</li><li>petition the government</li></ul>');
+INSERT INTO "questions" VALUES(7,1,'How many amendments does the Constitution have?','Twenty-seven (27)');
+INSERT INTO "questions" VALUES(8,1,'What did the Declaration of Independence do?','<ul><li>announced our independence (from Great Britan)</li><li>declared our independence (from Great Britan)</li><li>said that the United States if free (from Great Britain)</li></ul>');
+INSERT INTO "questions" VALUES(9,1,'What are <u>two</u> rights in the Declaration of Independence?','<ul><li>life</li><li>liberty</li><li>pursuit of happiness</li></ul>');
+INSERT INTO "questions" VALUES(10,1,'What is freedom of religion?','You can practice any religion, or not practice a religion');
+INSERT INTO "questions" VALUES(11,1,'What is the economic system in the United States?*','<ul><li>capitalist economy</li><li>market economy</li></ul>');
+INSERT INTO "questions" VALUES(12,1,'What is the “rule of law”?','<ul><li>Everyone must follow the law</li><li>Leaders must obey the law</li><li>Government must obey the law</li><li>No one is above the law</li></ul>');
+INSERT INTO "questions" VALUES(13,2,'Name <u>one</u> branch or part of the government.*','<ul><li>Congress</li><li>Legislative</li><li>President</li><li>Executive</li><li>The Courts</li><li>Judicial</li></u>');
+INSERT INTO "questions" VALUES(14,2,'What stops <u>one</u> branch of government from becoming too powerful?','<ul><li>checks and balances</li><li>seperation of powers</li></ul>');
+INSERT INTO "questions" VALUES(15,2,'Who is in charge of the executive branch?','the President');
+INSERT INTO "questions" VALUES(16,2,'Who makes federal laws?','<ul><li>Congress</li><li>Senate and House (of Representatives)</li><li>(U.S. Or national) Legislature</li></ul>');
+INSERT INTO "questions" VALUES(17,2,'What are the <u>two</u> parts of the U.S. Congress?*','the Senate and House (of Representatives)');
+INSERT INTO "questions" VALUES(18,2,'How many U.S. Senators are there?','one hundred (100)');
+INSERT INTO "questions" VALUES(19,2,'We elect a U.S. Senator for how many years?','Six (6)');
+INSERT INTO "questions" VALUES(20,2,'What is <u>one</u> of your state''s U.S. Senators now?*','Answers will vary. [District of Columbia residents and residents of U.S. Territories should answer that D.C. (or the territory where the applicant lives) has no U.S. Senators.]');
+INSERT INTO "questions" VALUES(21,2,'The House of Representatives has how many voting members?','four hundred thirty-five (435)');
+INSERT INTO "questions" VALUES(22,2,'We elect a U.S. Representative for how many years?','Two (2)');
+INSERT INTO "questions" VALUES(23,2,'Name your U.S. Representative.','Answers will vary. [Residents of territories with nonvoting Delegates or Resident Commissioners may provide the name of that Delegate or Commissioner.  Also acceptable is any statement that the territory has no (voting) Representative in Congress.]');
+INSERT INTO "questions" VALUES(24,2,'Who does a U.S. Senator represent?','all the people of the state');
+INSERT INTO "questions" VALUES(25,'w','Why do some states have more Representatives than others?','<ul><li>(because of) the state''s population</li><li>(because) they have more people</li><li>(because) some states have more people</li></ul>');
+INSERT INTO "questions" VALUES(26,2,'We elect a President for how many years?','Four (4)');
+INSERT INTO "questions" VALUES(27,2,'In what month do we vote for President?*','November');
+INSERT INTO "questions" VALUES(28,2,'What is the name of the President of the United States now?*','<ul><li>Barack Obama</li><li>Obama</li></ul>');
+INSERT INTO "questions" VALUES(29,2,'What is the name of the Vice President of the United Sates now?','<ul><li>Joseph R. Biden, Jr.</li><li>Joe Biden</li><li>Biden</li></ul>');
+INSERT INTO "questions" VALUES(30,2,'If the President can no longer serve, who becomes President?','the Vice President');
+INSERT INTO "questions" VALUES(31,2,'If both the President and the Vice President can no longer serve, who becomes the President?','the Speaker of the House');
+INSERT INTO "questions" VALUES(32,2,'Who is the Commander in Chief of the military?','the President');
+INSERT INTO "questions" VALUES(33,2,'Who signs bills to become laws?','the President');
+INSERT INTO "questions" VALUES(34,2,'Who vetoes bills?','the President');
+INSERT INTO "questions" VALUES(35,2,'What does the President''s Cabinet do?','advices the President');
+INSERT INTO "questions" VALUES(36,2,'What are <u>two</u> Cabinet-level positions','<ul><li>Secretary of Agriculture</li><li>Secretary of Commerce</li><li>Secretary of Defense</li><li>Secretary of Energy</li<li>Secretary of Health and Human Services</li><li>Secretary of Homeland Security</li><li>Secretary of Housing and Urban Development</li><li>Secretary of the Interior</li><li>Secretary of Labor</li><li>Secretary of State</li><li>Secretary of Transportation</li><li>Secretary of the Treasury</li><li>Secretary of Veterans Affairs</li><li>Attorney General</li><li>Vice President</li></ul>');
+INSERT INTO "questions" VALUES(37,2,'What does the judicial branch do?','<ul><li>reviews laws</li><li>explains laws</li><li>resolves disputes (disagreements)</li><li>decides if a law goes against the Constitution</li></ul>');
+INSERT INTO "questions" VALUES(38,2,'What is the highest court in the United States?','the Supreme Court');
+INSERT INTO "questions" VALUES(39,2,'How many justices are on the Supreme Court?','Nine (9)');
+INSERT INTO "questions" VALUES(40,2,'Who is the Chief Justice of the United States now?','John Roberts (John G. Roberts, Jr.)');
+INSERT INTO "questions" VALUES(41,2,'Under our Constitution some powers belong to the federal government.  What is <u>one</u> power of the federal government?','<ul><li>to print money</li><li>to delcare war</li><li>to create an army</li><li>to make treaties</li></ul><ul><li>to print money</li><li>to declare ware</li><li>to create an army</li><li>to make treaties</li></ul');
+INSERT INTO "questions" VALUES(42,2,'Under our Constitution  some powers belong to the federal government.  What is <u>one</u> power of the federal government?','<ul><li>provide schooling and education</li><li>provide protection (police)</li><li>provide safety (fire departments)</li><li>give a driver''s license</li><li>approve zoning and land use</li></ul><ul><li>provide schooling and education</li><li>provide protection</li><li>provide safety (fire departments)</li><li>give a driver''s license</li><li>approvate zoning and land use</li></ul>');
+INSERT INTO "questions" VALUES(43,2,'Who is the Governor of your State now?','Answers will vary. [District of Columbia residents should answer that D.C. Does not have a Governor.]');
+INSERT INTO "questions" VALUES(44,2,'What is the capital of your state?*','Answers will vary. [District of Columbia residents should answer that D.C. Is not a state and does not have a capital. Residents of U.S. Territories should name the capital of the territory.]');
+INSERT INTO "questions" VALUES(45,2,'What are <u>two</u> major political parties in the United States?*','Democratic and Republican');
+INSERT INTO "questions" VALUES(46,2,'What is the political party of the President now?','Democratic (party)');
+INSERT INTO "questions" VALUES(47,2,'What is the name of the Speaker of the House of Representatives now?','(John) Boehner');
+INSERT INTO "questions" VALUES(48,3,'There are four amendments to the Constitution about who can vote.  Describe <u>one</u> of them.','<ul><li>Citizens eighteen (18) and older (can vote)</li><li>You don''t have to pay (a poll tax) to vote</li><li>Any citizen can vote. (Women and men can vote)</li><li>A male citizen of any race (can vote)</li></ul>');
+INSERT INTO "questions" VALUES(49,3,'What is <u>one</u> responsibility that is only for United States citizens?*','<ul><li>serve on a jury</li><li>vote in a federal election</li></ul>');
+INSERT INTO "questions" VALUES(50,3,'Name <u>one</u> right only for United States Citizens.','<ul><li>vote in a federal election</li><li>run for federal office</li></ul>');
+INSERT INTO "questions" VALUES(51,3,'What are <u>two</u> rights of everyone living in the United States?','<ul><li>freedom of expression</li><li>freedom of speech</li><li>freedom of assembly</li><li>freedom to petition the government</li><li>freedom of worship</li><li>the right to bear arms</li></ul>');
+INSERT INTO "questions" VALUES(52,3,'What do we show loyalty to when we say the Pledge of Allegiance?','<ul><li>the United States</li><li>the flag</li></ul>');
+INSERT INTO "questions" VALUES(53,3,'What is the <u>one</u> promise you make when you become a United States citizen?','<ul><li>give up loyalty to other countries</li><li>defend the Constitution and laws of the United States</li><li>obey the laws of the United States</li><li>serve in the U.S. military(if needed)</li><li>serve (od important work for) the name (if needed)</li><li>be loyal to the United States</li></ul>');
+INSERT INTO "questions" VALUES(54,3,'How old do citizens have to be to vote for President?*','Eighteen (18) and older');
+INSERT INTO "questions" VALUES(55,3,'What are <u>two</u> ways that Americans can participate in their democracy?','<ul><li>vote</li><li>join a polical party</li><li>help with campaign</li><li>join a civic group</li><li>join a community group</li><li>give an elected official your opinion on an issue</li><li>call Senators and Representatives</li><li>publicly support or oppose an issue or policy</li><li>run for office</li><li>write to a newspaper</li></ul>');
+INSERT INTO "questions" VALUES(56,3,'When is the last day you can send in federal income tax forms?*','April 15');
+INSERT INTO "questions" VALUES(57,3,'When must all men register for Selective Service?','<ul><li>at age eighteen (18)</li><li>between eighteen (18) and twenty-six (26)</li></ul>');
+INSERT INTO "questions" VALUES(58,4,'What is <u>one</u> reason colonist came to America?','<ul><li>freedom</li><li>political liberty</li><li>religious freedom</li><li>economic opportunity</li><li>practice their religion</li><li>escape persecution</li></ul>');
+INSERT INTO "questions" VALUES(59,4,'Who lived in America before the Europeans arrived?','<ul><li>American Indians</li><li>Native Americans</li></ul>');
+INSERT INTO "questions" VALUES(60,4,'What group of people was taken to America and sold as slaves?','<ul><li>Africans</li><li>people from Africa</li></ul>');
+INSERT INTO "questions" VALUES(61,4,'Why did the colonists fight the British?','<ul><li>because of high taxes (taxation without representation)</li><li>because the British army stayed in their houses (boarding, quartering)</li></ul>');
+INSERT INTO "questions" VALUES(62,4,'Who wrote the Declaration of Independence?','(Thomas) Jefferson');
+INSERT INTO "questions" VALUES(63,4,'When was the Declaration of Independence adopted?','July 4, 1776');
+INSERT INTO "questions" VALUES(64,4,'There were 13 original states. Name <u>three</u>','<ul><li>New Hampshire</li><li>Massachusetts</li><li>Rhode Island</li><li>Connecticut</li><li>New York</li><li>New Jersey</li><li>Pennsylvania</li><li>Delaware</li><li>Maryland</li><li>Virginia</li><li>North Carolina</li><li>South Carolina</li><li>Georgia</li></ul>');
+INSERT INTO "questions" VALUES(65,4,'What happened at the Constitutional Convention?','<ul><li>The Constitution was written</li><li>The Founding Fathers wrote the Constitution.</li></ul>');
+INSERT INTO "questions" VALUES(66,4,'When was the Constitution written?','1787');
+INSERT INTO "questions" VALUES(67,4,'The Federalist Papers supported the passage of the U.S. Constitution. Name <u>one</u> of the writers.','<ul><li>(James) Madison</li><li>(Alexander) Hamilton</li><li>(John) Jay</li><li>Publius</li></ul>');
+INSERT INTO "questions" VALUES(68,4,'What is <u>one</u> thing Benjamin Franklin is famous for?','<ul><li>U.S. Diplomat</li><li>oldest member of the Constitutional Convention</li><li>first Postmaster General of the United States</li><li>writer of “Poor Richard''s Almanac”</li><li>started the first three free libraries</li></ul>');
+INSERT INTO "questions" VALUES(69,4,'Who is the “Father of Our Country”?','(George) Washington');
+INSERT INTO "questions" VALUES(70,4,'Who was the first President?*','(George) Washington');
+INSERT INTO "questions" VALUES(71,5,'What territory did the United States buy from France in 1803?','<ul><li>the Louisiana Territory</li><li>Louisiana</li></ul>');
+INSERT INTO "questions" VALUES(72,5,'Name <u>one</u> ware fought by the United States in the 1800s.','<ul><li>War of 1812</li><li>Mexican-American War</li><li>Civil War</li><li>Spanish-American War</li></ul>');
+INSERT INTO "questions" VALUES(73,5,'Name the U.S. War between the North and the South','<ul><li>the Civil War</li><li>the War between the States</li></ul>');
+INSERT INTO "questions" VALUES(74,5,'Name <u>one</u> problem that led to the Civil War.','<ul><li>slavery</li><li>economic reasons</li><li>states'' rights</li></ul>');
+INSERT INTO "questions" VALUES(75,5,'What was <u>one</u> important thing that Abraham Lincoln did?*','<ul><li>freed the slaves (Emancipation Proclamation)</li><li>saved (or preserved) the Union</li><li>led the United States during the Civil War</li></ul>');
+INSERT INTO "questions" VALUES(76,5,'What did the Emancipation Proclamation do?','<ul><li>freed the slaves</li><li>freed the slaves in the Confederacy</li><li>freed slaves in the Confederate states</li><li>freed slaves in most Southern states</li></ul>');
+INSERT INTO "questions" VALUES(77,5,'What did Susan B. Anthony do?','<ul><li>fought for women''s right</li><li>fought for civil rights</li></ul>');
+INSERT INTO "questions" VALUES(78,6,'Name <u>one</u> war fought by the United States in the 1900''s*','<ul><li>Word War I</li><li>World War II</li><li>Korean War</li><li>Vietnam War</li><li>(Persian) Gulf War</li></ul>');
+INSERT INTO "questions" VALUES(79,6,'Who was President during World War I?','(Woodrow) Wilson');
+INSERT INTO "questions" VALUES(80,6,'Who was President during the Great Depression and World War II?','(Franklin) Roosevelt');
+INSERT INTO "questions" VALUES(81,6,'Who did the United States fight in World War II?','Japan, Germany');
+INSERT INTO "questions" VALUES(82,6,'Before the President  Eisenhower was general. What war was he in?','World War II, World War II');
+INSERT INTO "questions" VALUES(83,6,'During the Cold War  what was the main concern of the United States?','Communism');
+INSERT INTO "questions" VALUES(84,6,'What movement tried to end racial discrimination?','civil rights (movement)');
+INSERT INTO "questions" VALUES(85,6,'What did Martin Luther King Jr. Do?*','<ul><li>fought for civil rights</li><li>worked for equality for all Americans</li><li>fought for civil rights</li><li>worked for equality for all Americans</li></ul>');
+INSERT INTO "questions" VALUES(86,6,'What major event happened on September 11 2001?','Terrorists attacked the United States');
+INSERT INTO "questions" VALUES(87,6,'Name <u>one</u> American Indian tribe in the United States.','<ul><li>Cherokee</li><li>Navajo</li><li>Sioux</li><li>Chippewa</li><li>Choctaw</li><li>Pueblo</li><li>Apache</li><li>Iroquois</li><li>Creek</li><li>Blackfeet</li><li>Seminole</li><li>Cheyenne</li><li>Arawak</li><li>Shawnee</li><li>Mohegan</li><li>Huron</li><li>Oneida</li><li>Lakota</li><li>Crow</li><li>Teton</li><li>Hopi</li><li>Inuit</li></ul>');
+INSERT INTO "questions" VALUES(88,7,'Name <u>one</u> of the two longest rivers in the United States.','<ul><li>Missouri (River)</li><li>Mississippi (River)</li></ul>');
+INSERT INTO "questions" VALUES(89,7,'What ocean is on the West Coast of the United States?','Pacific (Ocean)');
+INSERT INTO "questions" VALUES(90,7,'What ocean is on the East Coast of the United States?','Atlantic (Ocean)');
+INSERT INTO "questions" VALUES(91,7,'Name <u>one</u> U.S. Territory.','<ul><li>Puerto Rico</li><li>U.S. Virgin Islands</li><li>American Samoa</li><li>Northen Mariana Islands</li><li>Guam</li></ul>');
+INSERT INTO "questions" VALUES(92,7,'Name <u>one</u> state that borders Canada.','<ul><li>Maine</li><li>New Hampshire</li><li>Vermont</li><li>New York</li><li>Pennsylvania</li><li>Ohio</li><li>Michigan</li><li>Minnesota</li><li>North Dakota</li><li>Montana</li><li>Idaho</li><li>Washington</li><li>Alaska</li></ul>');
+INSERT INTO "questions" VALUES(93,7,'Name <u>one</u> state that borders Mexico.','<ul><li>California</li><li>Arizona</li><li>New Mexico</li><li>Texas</li></ul>');
+INSERT INTO "questions" VALUES(94,7,'What is the capital of the United States?*','Washington, D.C.');
+INSERT INTO "questions" VALUES(95,7,'Where is the Statue of Liberty?*','<ul><li>New York (Harbor)</li><li>Liberty Island</li></ul><br />[Also Acceptable are New Jersey, near New York City');
+INSERT INTO "questions" VALUES(96,8,'Why does the flag have 13 stripes?','<ul><li>because there were 13 original colonies</li><li>because the stripes represent the original colonies</li></ul>');
+INSERT INTO "questions" VALUES(97,8,'Why does the flag have 50 stars?*','<ul><li>because there is one start for each state</li><li>because each start represents a state</li><li>because there are 50 states</li></ul>');
+INSERT INTO "questions" VALUES(98,8,'What is the name of the national anthem?','The Star-Spangled Banner');
+INSERT INTO "questions" VALUES(99,9,'When do we celebrate Independence Day?*','July 4');
+INSERT INTO "questions" VALUES(100,9,'Name <u>two</u> national U.S. Holidays','<ul><li>New Year''s Day</li><li>Martin Luther King, Jr. Day</li><li>Presidents'' Day</li><li>Memorial Day</li><li>Independence Day</li><li>Labor Day</li><li>Columbus Day</li><li>Veterans Day</li><li>Thanksgiving</li><li>Christmas</li></ul>');
+DELETE FROM sqlite_sequence;
+INSERT INTO "sqlite_sequence" VALUES('categories',3);
+INSERT INTO "sqlite_sequence" VALUES('sections',9);
+INSERT INTO "sqlite_sequence" VALUES('questions',100);
+COMMIT;

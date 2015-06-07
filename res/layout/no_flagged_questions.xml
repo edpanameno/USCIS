@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#580000" >
+  <TextView
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:textColor="#c0c0c0"
+    android:textSize="20dip"
+    android:gravity="center_vertical|center_horizontal"
+    android:text="There are no flagged Questions. Press the back button on your phone to go back to the previous screen." />
+</LinearLayout>

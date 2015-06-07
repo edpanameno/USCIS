@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:background="#580000" 
+  android:layout_width="match_parent" 
+  android:baselineAligned="true" 
+  android:paddingTop="20dip"
+  android:paddingLeft="15dip"
+  android:paddingRight="10dip"
+  android:layout_height="match_parent">
+  <LinearLayout
+    android:layout_width="95dip"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#484848"
+        android:textSize="18dip"
+        android:paddingLeft="12dip"
+        android:textColor="#fcfcfc"
+        android:text="Question" />
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/questionNumber"
+        android:textSize="30dp"
+        android:textColor="#BDB5B7"
+        android:background="#484848"
+        android:gravity="center_horizontal"
+        android:text="5" />
+    <ImageView 
+        android:src="@drawable/statue" 
+        android:scaleType="fitStart"
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content"/>
+  </LinearLayout>
+  <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="10dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="fill_parent"
+        android:id="@+id/question"
+        android:textSize="25dp"
+        android:textColor="#b3b5b7" 
+        android:layout_height="200dp"/> 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="70dip">
+      <ImageButton 
+        android:id="@+id/btnPrevious" 
+        android:layout_height="fill_parent" 
+        android:layout_width="55dip" 
+        android:background="@android:color/transparent" 
+        android:src="@drawable/icon_arrow_left"/>
+      <ImageButton 
+        android:id="@+id/btnNext" 
+        android:layout_height="fill_parent" 
+        android:layout_width="55dip" 
+        android:background="@android:color/transparent" 
+        android:src="@drawable/icon_arrow_right"/>
+   </LinearLayout>
+  </LinearLayout>
+</LinearLayout>

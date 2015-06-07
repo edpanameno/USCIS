@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:background="@drawable/round_corners"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:padding="2dp">
+     <TextView
+        android:id="@+id/questionNumber"
+        android:layout_width="55dip"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="#BDB5B7"
+        android:gravity="center_horizontal"
+        android:textStyle="bold" />
+     <TextView 
+        android:id="@+id/question"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:minHeight="70dp"
+        android:layout_toRightOf="@id/questionNumber"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#580000"
+        android:textColor="#cccccc" />
+     <!--  <WebView 
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/questionNumber"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dip"
+        android:background="#580000"
+        android:layout_below="@id/question"
+        android:layout_alignWithParentIfMissing="true" 
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+     /> -->
+     <TextView 
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/questionNumber"
+        android:paddingLeft="5dp"
+        android:paddingBottom="5dp"
+        android:background="#580000"
+        android:textColor="#cccccc"
+        android:layout_below="@id/question"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" />
+</RelativeLayout>

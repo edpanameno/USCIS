@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#580000"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dip"
+        android:layout_marginLeft="1dip"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dip" >
+        <ImageView 
+            android:layout_width="120dip"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/uscis" />
+        <TextView  
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:textSize="27dp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:textColor="#ffffff"
+            android:layout_marginTop="15dip"
+            android:layout_marginBottom="20dip"
+            android:text="@string/app_title"/>
+        </LinearLayout>
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_height="fill_parent" 
+        android:layout_gravity="center_horizontal"
+        android:layout_width="220dip">
+        <Button
+            android:id="@+id/btnBrowseQuestions" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/home_browse_questions" />
+        <Button
+            android:id="@+id/btnFlashCards" 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/home_flashcards"/>
+        <Button
+            android:id="@+id/btnFlaggedQuestions" 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Flagged Questions" />
+        <Button
+            android:id="@+id/btnAppPreferences" 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Preferences" />
+        <Button
+            android:id="@+id/btnHelp" 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Help"/>
+    </LinearLayout>
+</LinearLayout>
